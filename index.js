@@ -1,3 +1,4 @@
+
 const Discord = require("discord.js");
 
 const bot = new Discord.Client();
@@ -42,9 +43,7 @@ bot.on('message', message => {
 
       } else {
         message.reply('Tu n as pas mentionné l utilisateur !');
-      });
-      } else {
-        message.reply('Tu n as pas la permission !');
+      }
     }
   })
 
@@ -82,13 +81,10 @@ bot.on('message', message => {
         } else {
           // The mentioned user isn't in this guild
           message.reply('Cet utilisateur n est pas dans le serveur');
-        });
+        }
       } else {
       // Otherwise, if no user was mentioned
         message.reply('Tu n as pas mentionné l utilisateur !');
-      }
-      } else {
-        message.reply('Tu n as pas la permission !');
       }
     }
   });
