@@ -34,7 +34,7 @@ bot.on('message', message => {
           member.kick('Pourquoi veux-tu bannir cet utilisateur ?').then(() => {
             message.reply(`${user.tag} a bien été kick !`);
           }).catch(err => {
-            message.reply('Je n ai pas la permission !');
+            message.reply('Je / Tu n as pas la permission !');
             console.error(err);
           });
         } else {
@@ -74,7 +74,7 @@ bot.on('message', message => {
             // An error happened
             // This is generally due to the bot not being able to ban the member,
             // either due to missing permissions or role hierarchy
-            message.reply('Je n ai pas la permission !');
+            message.reply('Je / Tu n as pas la permission !');
             // Log the error
             console.error(err);
           });
